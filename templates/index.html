@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>左右过度切换的登录注册页面演示</title>
+<title>登录注册页面演示</title>
 <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
 </head>
 
@@ -11,16 +11,17 @@
     <div class="content">
         <div class="form sign-in">
             <h2>欢迎回来</h2>
-            <label>
+            <form action="/login" method="post">
+            <label for="email">
                 <span>邮箱</span>
-                <input type="email" />
+                <input type="email" id="email" name="email" required><br>
             </label>
-            <label>
+            <label for="password">
                 <span>密码</span>
-                <input type="password" />
+                <input type="password" id="password" name="password" required>
             </label>
-
-            <button type="button" class="submit">登 录</button>
+            <button type="submit" class="submit">登 录</button>
+            </form>
         </div>
         <div class="sub-cont">
             <div class="img">
@@ -37,10 +38,6 @@
             </div>
             <div class="form sign-up">
                 <h2>立即注册</h2>
-                <label>
-                    <span>用户名</span>
-                    <input type="text" />
-                </label>
                 <label>
                     <span>邮箱</span>
                     <input type="email" />
