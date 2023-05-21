@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def test():  # put application's code here
-    return 'test!'
+    return 'test,failed!'
 
 
 if __name__ == '__main__':
