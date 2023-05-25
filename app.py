@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, url_for, request, redirect
-
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
@@ -18,6 +18,11 @@ def login():
             return 'wrong'
     elif request.method == 'GET':
         return redirect(url_for('index'))
+
+
+@app.route('/login/1', methods=['GET', "POST"])  # 路由默认接收请求方式位POST，然而登录所需要请求都有，所以要特别声明。
+def navigate():
+    return render_template('bar_chart.html')
 
 
 if __name__ == '__main__':
