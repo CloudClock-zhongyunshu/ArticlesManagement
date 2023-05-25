@@ -13,16 +13,11 @@ def index():
 def login():
     if request.method == 'POST':
         if request.form['password'] == '1234':
-            return render_template('test.html')
+            return render_template('data_visualization.html')
         else:
             return 'wrong'
     elif request.method == 'GET':
         return redirect(url_for('index'))
-
-
-@app.route('/')
-def test():
-    return render_template('test.html')
 
 
 if __name__ == '__main__':

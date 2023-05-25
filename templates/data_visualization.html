@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>数据可视化</title>
-<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static',filename='css/simpleGridTemplate.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
   <!-- Header -->
   <header class="header">
    <blockquote>
@@ -35,7 +35,7 @@
   <section class="intro">
     <div class="column">
       <h3>我&nbsp;</h3>
-<img src="images/profile.png" alt="" class="profile"> </div>
+<img src="static/images/profile.png" alt="" class="profile"> </div>
     <div class="column">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
@@ -43,28 +43,28 @@
   </section>
   <!-- Stats Gallery Section -->
   <div class="gallery">
-    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html"><img src="images/柱状图.png" alt="" width="942" height="599" class="cards"/></a>
+    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html"><img src="static/images/柱状图.png" alt="" width="942" height="599" class="cards"/></a>
       <h4>柱状图&nbsp;</h4>
       <p class="tag"> 比较大小事物的标准方法</p>
       <p class="tag">&nbsp;</p>
 
 <p class="text_column">&nbsp;</p>
     </div>
-    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html"><img src="images/折线图.png" alt="" width="666" height="586" class="cards"/></a>
+    <div class="thumbnail"> <a href="{{ url_for('static',filename='templates/bar_chart.html')}}"><img src="static/images/折线图.png" alt="" width="666" height="586" class="cards"/></a>
       <h4>折线图&nbsp;</h4>
       <p class="tag"> 显示时间序列的标准方法&nbsp;</p>
-      
+
 <p class="tag">&nbsp;</p>
 <p class="text_column">&nbsp;</p>
     </div>
-    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html"><img src="images/条形图.png" alt="" width="868" height="600" class="cards"/></a>
+    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html"><img src="static/images/条形图.png" alt="" width="868" height="600" class="cards"/></a>
       <h4>条形图&nbsp;</h4>
       <p class="tag">适合比较大小</p>
       <p class="tag">&nbsp;</p>
 <p class="text_column">&nbsp;</p>
-  
+
     </div>
-    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html" target="_top"><img src="images/饼图.png" alt="" width="624" height="502" class="cards"/></a>
+    <div class="thumbnail"> <a href="../bar_chart/bar_chart.html" target="_top"><img src="static/images/饼图.png" alt="" width="624" height="502" class="cards"/></a>
       <h4>饼图&nbsp;</h4>
       <p class="tag">适用于部分到整体的可视化&nbsp;</p>
       <p class="text_column">&nbsp;</p>
@@ -73,23 +73,23 @@
   </div>
   <div class="gallery">
     <div class="thumbnail"> <a href="#"><em><strong>
-     
-    </strong></em><img src="images/柱状图竞赛.gif" alt="" width="712" class="cards"/></a>
+
+    </strong></em><img src="static/images/柱状图竞赛.gif" alt="" width="712" class="cards"/></a>
       <h4>柱状图竞赛&nbsp;</h4>
       <p class="tag">导入柱状图并显示随时间的变化&nbsp;</p>
       <p class="text_column">&nbsp;</p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/折线图竞赛.gif" alt="" width="712" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="static/images/折线图竞赛.gif" alt="" width="712" class="cards"/></a>
       <h4>折线图竞赛&nbsp;</h4>
       <p class="tag">&nbsp;导入折现图并显示随时间的变化</p>
       <p class="text_column">&nbsp;</p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/条形图竞赛.gif" alt="" width="712" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="static/images/条形图竞赛.gif" alt="" width="712" class="cards"/></a>
       <h4>条形图竞赛&nbsp;</h4>
       <p class="tag">导入条形图并显示随时间的变化&nbsp;</p>
       <p class="text_column">&nbsp;</p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/饼图竞赛.gif" alt="" width="1280" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="static/images/饼图竞赛.gif" alt="" width="1280" class="cards"/></a>
       <h4>饼图竞赛&nbsp;</h4>
       <p class="tag">导入饼图并显示随时间的变化&nbsp;</p>
       <p class="text_column">&nbsp;</p>
