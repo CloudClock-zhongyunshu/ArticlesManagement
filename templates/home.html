@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h2> </h2>
+  <div class="text-center" >
+    <h1>个人文章管理网站</h1>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">注册</a>
+      <a href="/login" class="btn btn-success btn-lg">登录</a>
+    {% endif %}
+  </div>
+{% endblock %}
