@@ -1,0 +1,11 @@
+<div class="content">
+    <p>test</p>
+  <p class="title-center">{{article.title}}</p>
+  <p class="text-center">作者：{{article.author}} &nbsp {{article.create_date}} </p>
+    <p></p>
+  <div>
+    {{article.content | safe}}
+  </div>
+</div>
+
+{% endblock %}
