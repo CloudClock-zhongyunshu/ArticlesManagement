@@ -3,9 +3,7 @@
 
 Here lies the code of Program Design Comprehensive Experiment Course. 
 
-It's a simple articles manageme web program written by YeYunhan and ZhongYunshu. 
-
-
+It's a simple articles management web program written by YeYunhan and ZhongYunshu. 
 
 
 
